@@ -1,108 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Validation with RegEx</title>
-  <style>
-    body {
-      background-color: #f5f0fa;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validation with RegEx</title>
+<style>
+  body {
+    background-color: #f5f0fa;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 
-    .container {
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(128, 0, 128, 0.2);
-      width: 400px;
-    }
+  .container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(128, 0, 128, 0.2);
+    width: 400px;
+  }
 
-    h1 {
-      color: #6a0dad;
-      text-align: center;
-      margin-bottom: 20px;
-    }
+  h1 {
+    color: #6a0dad;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-    label {
-      display: block;
-      margin-top: 15px;
-      color: #6a0dad;
-    }
+  label {
+    display: block;
+    margin-top: 15px;
+    color: #6a0dad;
+  }
 
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      border: 2px solid #d6b3ff;
-      border-radius: 8px;
-      margin-top: 5px;
-      font-size: 14px;
-    }
-
-    input:focus, textarea:focus {
-      outline: none;
-      border-color: #6a0dad;
-    }
-
-    .error {
-      color: red;
-      font-size: 12px;
-      height: 12px;
-    }
-
-    button {
-      margin-top: 20px;
-      width: 100%;
-      padding: 12px;
-      background-color: #6a0dad;
-      color: white;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #590c9b;
-    }
-
-    .subtitle {
-      font-size: 12px;
-      color: #6a0dad;
-      margin-top: 15px;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>We would like to help you</h1>
-    <form id="contactForm">
-      <label for="name">Name</label>
-      <input type="text" id="name" placeholder="Enter your name">
-      <div class="error" id="nameError"></div>
-
-      <label for="message">Message</label>
-      <textarea id="message" placeholder="Enter your message"></textarea>
-      <div class="error" id="messageError"></div>
-
-      <div class="subtitle">How to answer you</div>
-
-      <label for="phone">Phone number</label>
-      <input type="text" id="phone" placeholder="+380XXXXXXXXX">
-      <div class="error" id="phoneError"></div>
-
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="example@email.com">
-      <div class="error" id="emailError"></div>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #d6b3ff;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    resize: none; /* за*
