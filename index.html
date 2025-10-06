@@ -42,4 +42,69 @@
     margin-top: 5px;
     font-size: 14px;
     box-sizing: border-box;
-    resize: none; /* за*
+    resize: none;
+  }
+
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #6a0dad;
+  }
+
+  .error {
+    color: red;
+    font-size: 12px;
+    height: 12px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    color: #6a0dad;
+    margin-top: 15px;
+  }
+
+  button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #6a0dad;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #590c9b;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>We would like to help you</h1>
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name">
+      <div class="error" id="nameError"></div>
+
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Enter your message"></textarea>
+      <div class="error" id="messageError"></div>
+
+      <div class="subtitle">How to answer you</div>
+
+      <label for="phone">Phone number</label>
+      <input type="text" id="phone" placeholder="+380XXXXXXXXX">
+      <div class="error" id="phoneError"></div>
+
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="example@email.com">
+      <div class="error" id="emailError"></div>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
